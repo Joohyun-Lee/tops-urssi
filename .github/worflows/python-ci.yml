@@ -10,8 +10,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v3
-	  with:
-	    python-version: 3.11
+      with:
+        python-version: 3.11
     - name: Install dependencies
       run: python -m pip install --update pip && pip install pytest
     - name: Test code with pytest
